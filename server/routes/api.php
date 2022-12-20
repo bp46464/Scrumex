@@ -74,7 +74,7 @@ Route::get('projects/{projectId}/sprints/{sprintId}/tasks', [SprintController::c
 Route::get('projects/{projectId}/sprints/{sprintId}/tasks/{taskId}', [SprintController::class, 'getSpecificSprintTask']);
 #Delete task from sprint
 Route::delete('projects/{projectId}/sprints/{sprintId}/tasks/{taskId}', [SprintController::class, 'deleteTaskFromSprint']);
-#delete specific sprint NIE UŻYWAĆ KURWA
+#delete specific sprint
 Route::delete('projects/{projectId}/sprints/{sprintId}', [SprintController::class, 'deleteSpecificSprint']);
 #Update task status
 Route::patch('projects/{projectId}/sprints/{sprintId}/tasks/{taskId}', [TaskController::class, 'updateStatus']);
